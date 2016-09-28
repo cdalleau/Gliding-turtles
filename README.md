@@ -18,6 +18,8 @@ This process interpolates also (1) the latitude, longitude and voltage battery; 
 The analysis of the vertical trajectory is processed in a third script using the L1_1 product. After the importation and selection of the data, the function diveMove (P. Luque, 2007) are used to:
 - detect the individual dives with their different phases: descent, bottom, ascent and surface
 - calculate dive statistics for each dive: distance and duration for each phase
+
 This data and the data from L1_1 product are exported in a L1_2 product.
+
 Finally the data from L1_1 product are imported to interpolate positions based on a state-space model (SSM) and the behavior mode is estimated using the algorithm developed by Jonsen et al. (Jonsen et al, 2005). This script allows the exportation of several plots supplied by the SSM and the data in a L2 product. 
 
