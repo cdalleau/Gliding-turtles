@@ -57,9 +57,9 @@ library(curl)
 
 
 ### Set the turtle ID (Ptt) and if the data should be downloaded from the WC data portal 
-tag_id <-  151933 # modify the tag_id according to your turtle (e.g. 138120 151933)
+tag_id <-  00000 # modify the tag_id according to your turtle 
 download_from_WCDataPortal <- "no" # if "yes", step 1 will be processed
-lan.setlocale = "English" # Warning : parse_date_time work with "Spanish" for the turtle 138120 and "English" for the turtle 151933
+lan.setlocale = "English" # see parse_date_time
 
 ############################### Step 1: creation of the CSV file from WC Data Portal ##################
 
@@ -69,7 +69,7 @@ if (download_from_WCDataPortal == "yes") {
       keyfile = "keyfile.json"
       
       # User ID
-      owner = "55beb2152484c8f51dfea90a"  # this ID was obtained after inspecting the Data Portal with Chrome developer tools
+      owner = "xxxxxxxxxxxxxxxxxxxxxx"  # this ID was obtained after inspecting the Data Portal with Chrome developer tools
       
       
       # Folder to download data
