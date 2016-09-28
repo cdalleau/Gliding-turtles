@@ -7,6 +7,7 @@ The main goal of our project is to analyze the turtles’ trajectory. For this, 
 - the L1_1 product contains an analysis of the horizontal trajectory
 - the L1_2 product contains an analysis of the  vertical trajectory
 - the L2 product contains interpolated positions based on a state-space model.
+
 We also wrote two scripts to view the variables of products and plot the track.
 Thus a first script allows the creation of a file containing the raw data. The data are imported from the Wildlife Computers data portal or a folder containing the CSV files. The interesting data are selected, merged together and exported in a L0 product. This product contains the raw data about the latitude, longitude, sea temperature, depth and the battery voltage. The locations are sorted by the location class of Argos and recorded in the variable: location quality. 
 Then a second script uses this L0 product to analyze the horizontal trajectory. The data are imported and the interesting data are selected. The data are filtered by several functions:
